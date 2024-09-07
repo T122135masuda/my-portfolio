@@ -1,43 +1,43 @@
 .navbar {
-    position: relative; /* fixedからrelativeに変更 */
-    width: 100%;
-    background: linear-gradient(90deg, #4caf50, #81c784); /* グラデーションを追加 */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    padding: 10px 0;
-  }
-  
-  .navbar-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  
-  .navbar-item {
-    margin: 0 20px;
-  }
-  
-  .navbar-item a {
-    text-decoration: none;
-    color: #ffffff; /* リンクの色を白に設定 */
-    font-size: 16px;
-    font-weight: bold;
-    transition: color 0.3s ease, transform 0.3s ease;
-    padding: 5px 10px;
-    border-radius: 5px;
-  }
-  
-  .navbar-item a:hover {
-    color: #333; /* ホバー時のテキスト色を変更 */
-    background-color: #ffffff; /* ホバー時の背景色を白に */
-    transform: scale(1.1); /* ホバー時に少し拡大 */
-  }
-  
-  .navbar-item a:active {
-    transform: scale(0.95); /* クリック時に縮小 */
-  }
-  
-  
+  position: relative;
+  width: auto;
+  background-color: #4caf50; /* 背景色を緑に設定 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 10px 0; /* ナビゲーションバーの高さを調整 */
+  display: flex;
+  justify-content: center; /* メニューを中央に配置 */
+}
+
+.navbar-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar-item {
+  margin: 0 15px;
+}
+
+.navbar-item a {
+  text-decoration: none;
+  color: #ffffff; /* リンクの色を白に設定 */
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.navbar-item a:hover {
+  color: #4caf50; /* ホバー時のテキスト色を緑に変更 */
+  background-color: #ffffff; /* ホバー時の背景色を白に変更 */
+  transform: scale(1.1); /* ホバー時に少し拡大 */
+}
+
+.navbar-item a:active {
+  transform: scale(0.95); /* クリック時に縮小 */
+}

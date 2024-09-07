@@ -1,30 +1,74 @@
 .profile-section {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 40px;
-  text-align: left; /* テキストを左揃えにします */
+  align-items: center; /* 縦方向の中央揃え */
+  justify-content: center; /* 横方向の中央揃え */
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 30px auto; /* セクション全体を中央に配置 */
+  max-width: 800px; /* 最大幅を設定して中央揃え */
+  transition: box-shadow 0.3s ease;
+}
+
+.profile-section:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 .profile-photo {
-  width: 150px;
-  height: 150px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
-  margin-right: 20px; /* 画像とテキストの間にスペースを追加 */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-right: 30px;
+  border: 4px solid #4caf50;
 }
 
 .profile-description {
   max-width: 600px;
+  text-align: left; /* テキストを左揃え */
 }
 
 .profile-description h2 {
-  font-size: 24px;
+  margin-bottom: 20px;
   color: #333;
-  margin-bottom: 10px;
+  font-size: 24px;
+  border-bottom: 2px solid #4caf50;
+  padding-bottom: 5px;
+  display: inline-block;
 }
 
-.profile-description p {
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: #333;
+  align-items: flex-start; /* 各項目を左揃え */
+}
+
+.profile-item {
   font-size: 16px;
-  color: #666;
+  line-height: 1.6;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* アイテム全体を左揃え */
+}
+
+.profile-icon {
+  margin-right: 10px;
+  color: #4caf50;
+  font-size: 18px;
+}
+
+.profile-item strong {
+  margin-right: 5px;
+  color: #333;
+}
+
+.profile-item a {
+  color: #0073e6;
+  text-decoration: none;
+}
+
+.profile-item a:hover {
+  text-decoration: underline;
 }
