@@ -3,10 +3,13 @@ import Profile from './components/Profile';
 import Projects from './components/Projects';
 import JoinEvents from './components/Join-Events';
 import Navbar from './components/Navbar'; // 新しいNavbarコンポーネントをインポート
+import './App.css'; // App.cssをインポート
 
 const App = () => {
   return (
-    <div>
+    <div className="App"> {/* Appクラスを追加 */}
+      {/* 背景スタイルを正しく適用するためのクラス */}
+
       {/* 自己紹介セクション */}
       <section id="introduction">
         <Profile />

@@ -4,66 +4,53 @@
   text-align: center;
   padding: 20px;
   font-family: Arial, sans-serif;
-  min-height: 100vh; /* 画面全体の高さ */
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4, #fbc2eb, #8fd3f4); /* より多くの色を使ったグラデーション */
-  background-size: 300% 300%;
-  animation: gradientAnimation 15s ease infinite; /* より速い速度のアニメーション */
-  position: relative;
-  overflow: hidden;
+  justify-content: flex-start;
+  background-color: #ffffff;
 }
 
-/* 背景のグラデーションアニメーション */
-@keyframes gradientAnimation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-/* ドットパターンを作成するための擬似要素 */
-.App::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 300%;
-  height: 300%;
-  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.15) 1%, transparent 1%), 
-                    radial-gradient(circle, rgba(255, 255, 255, 0.15) 1%, transparent 1%);
-  background-size: 100px 100px;
-  background-position: 0 0, 50px 50px;
-  z-index: 0;
-  animation: patternAnimation 20s linear infinite;
-  opacity: 0.7; /* パターンの透明度を調整 */
-}
-
-/* パターンの移動アニメーションを強調 */
-@keyframes patternAnimation {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(100px, 100px); /* より大きな移動距離 */
-  }
-}
-
-/* コンテンツのスタイルを維持 */
-section {
-  position: relative;
-  z-index: 1;
-  background: rgba(255, 255, 255, 0.85);
-  border-radius: 8px;
+/* 各セクションの背景色とスタイルを調整 */
+#projects, #events, #career-focus {
+  background-color: #f1f8e9 !important; /* 背景色を指定した色に変更 */
+  width: 100%;
   padding: 20px;
-  margin: 20px auto;
-  max-width: 800px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 0; /* セクション間に余白を追加 */
+  border: 1px solid #d0e8c0; /* 区切りをはっきりさせるためのボーダー */
+  border-radius: 12px; /* 角の丸みを追加 */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ナビゲーションバーのスタイル */
+.navbar {
+  background-color: #4caf50;
+  width: 100%;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+}
+
+/* ナビゲーションリンクのスタイル */
+.navbar-item a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-item a:hover {
+  background-color: #45a049;
+  border-radius: 5px;
+}
+
+/* セクションホバー効果 */
+section:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
