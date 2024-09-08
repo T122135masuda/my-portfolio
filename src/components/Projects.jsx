@@ -7,7 +7,7 @@ const projects = [
     date: '代表', 
     title: 'VitaLinkプロジェクト', 
     description: 'VitaLinkプロジェクトは、次世代のヘルスケアプラットフォームを開発することを目的としています。患者と医療従事者をつなぎ、データドリブンな医療を実現します。',
-    heading: 'デジタルヘルスケアの未来を築く',
+    heading: '地域医療・福祉 × DX',
     images: [
       'https://via.placeholder.com/300?text=VitaLink+1',
       'https://via.placeholder.com/300?text=VitaLink+2',
@@ -61,6 +61,7 @@ export default function Projects() {
           <div className="project-header">
             <div className="project-date">{project.date}</div>
             <div className="project-title">{project.title}</div>
+            <div className="project-heading" style={{ fontWeight: 'bold', marginTop: '5px' }}>{project.heading}</div> {/* 太字で見出しを表示 */}
           </div>
 
           {/* 開いたときのみ表示する部分 */}
@@ -71,8 +72,6 @@ export default function Projects() {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5 }}
             >
-              {/* 見出しをdescriptionの上に追加 */}
-              <h3 style={{ marginBottom: '15px', color: '#333', fontWeight: 'bold' }}>{project.heading}</h3>
               <p>{project.description}</p>
               
               <div className="project-images">

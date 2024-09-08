@@ -2,14 +2,13 @@ import React from 'react';
 import Profile from './components/Profile';
 import Projects from './components/Projects';
 import JoinEvents from './components/Join-Events';
-import Navbar from './components/Navbar'; // 新しいNavbarコンポーネントをインポート
-import './App.css'; // App.cssをインポート
+import Navbar from './components/Navbar';
+import MediaSection from './components/MediaSection'; // 新しいMediaSectionコンポーネントをインポート
+import './App.css';
 
 const App = () => {
   return (
-    <div className="App"> {/* Appクラスを追加 */}
-      {/* 背景スタイルを正しく適用するためのクラス */}
-
+    <div className="App">
       {/* 自己紹介セクション */}
       <section id="introduction">
         <Profile />
@@ -28,6 +27,11 @@ const App = () => {
       <section id="events">
         <h1 style={{ textAlign: 'center', margin: '20px 0' }}>参加中のイベント</h1>
         <JoinEvents />
+      </section>
+
+      {/* メディア掲載セクション */}
+      <section id="media">
+        <MediaSection />
       </section>
 
       {/* 就活の軸セクション */}

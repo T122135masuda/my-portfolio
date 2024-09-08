@@ -1,0 +1,77 @@
+/* MediaSection.css */
+
+.media-section {
+    padding: 20px;
+    background-color: #f1f8e9; /* 背景色を他のセクションと同じに設定 */
+    text-align: center;
+  }
+  
+  .media-entries {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .media-card {
+    background-color: transparent; /* 背景を透明に設定 */
+    border: 1px solid #d0e8c0;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .media-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .media-project-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .media-date {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .media-description {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .media-video {
+    margin: 15px 0;
+  }
+  
+  .media-video iframe {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+  }
+  
+  .media-image {
+    margin: 15px 0;
+  }
+  
+  .media-image img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+  }
+  
+  .media-link a {
+    color: #1e88e5;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .media-link a:hover {
+    text-decoration: underline;
+  }
+  
