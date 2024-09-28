@@ -3,7 +3,7 @@
   align-items: center; /* 縦方向の中央揃え */
   justify-content: center; /* 横方向の中央揃え */
   padding: 20px;
-  background-color: #ffffff;
+  background-color: #f1f8e9; /* 他のセクションと同じ背景色に変更 */
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   margin: 30px auto; /* セクション全体を中央に配置 */
@@ -16,11 +16,25 @@
 }
 
 .profile-photo {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
+  width: 180px; /* 長方形の幅 */
+  height: 240px; /* 長方形の高さ */
+  border-radius: 12px; /* 角を少し丸める */
   margin-right: 30px;
-  border: 4px solid #4caf50;
+  border: 4px solid #4caf50; /* 緑色の境界線 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 影を追加 */
+  transition: transform 0.3s ease;
+  overflow: hidden; /* 画像が枠内に収まるようにする */
+}
+
+.profile-photo:hover {
+  transform: scale(1.05); /* ホバー時に少し拡大 */
+}
+
+.profile-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 画像が正しく収まるように調整 */
+  border-radius: inherit; /* 親要素と同じ丸みを適用 */
 }
 
 .profile-description {

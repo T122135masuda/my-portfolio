@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
 import './Join-Events.css';
-import { FaHackerrank, FaCity } from 'react-icons/fa';
+import { FaHackerrank } from 'react-icons/fa';
 
 // 相対パスを使用して画像をインポート
 import sonyImage1 from '../assets/Join-Events/sony1.png';
@@ -17,6 +17,7 @@ const events = [
     title: 'Sony ~Sensing Solution ハッカソン~', 
     icon: <FaHackerrank />,
     description: 'Sonyハッカソンは、最新のテクノロジーとクリエイティブなアイデアを組み合わせたプロジェクトを開発するイベントです。エンターテイメントやイノベーションに関する革新的なソリューションを生み出すことを目指しています。',
+    link: 'https://sensing-solution-hackathon.sonyged.com/#year-2024', // 公式サイトリンクを追加
     images: [
       sonyImage1,
       sonyImage2,
@@ -25,8 +26,9 @@ const events = [
   { 
     date: '2024年 10月', 
     title: 'Plateauハッカソン', 
-    icon: <FaCity />,
+    icon: <FaHackerrank />,
     description: 'Plateauハッカソンは、都市データを活用した新しいサービスやソリューションを開発することを目的としたイベントです。スマートシティや都市計画に関する革新的なプロジェクトを生み出します。',
+    link: 'https://example.com/plateau-hackathon', // 公式サイトリンクを追加
     images: [
       plateauImage1,
       plateauImage2,
@@ -75,8 +77,18 @@ export default function JoinEvents() {
               initial={{ height: 0, opacity: 0 }}
               animate={{ height: 'auto', opacity: 1 }}
               transition={{ duration: 0.4 }}
+              onClick={(e) => e.stopPropagation()} // クリックイベントの伝搬を停止
             >
               <p>{event.description}</p>
+              {/* 公式サイトへのリンクを追加 */}
+              <a 
+                href={event.link} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="official-site-link"
+              >
+                公式サイトのリンク
+              </a>
               <div className="join-event-images">
                 {event.images.map((image, i) => (
                   <Zoom key={i} onZoomChange={handleZoomChange}>

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Profile.css';
-import profilePhoto from '../assets/nari.png'; // 画像ファイルをインポート
+import profilePhoto from '../assets/image.png'; // 画像ファイルをインポート
 import { FaUniversity, FaMapMarkerAlt, FaGithub, FaUser, FaBook, FaMicroscope, FaSmile, FaUsers, FaMedal, FaRegTired } from 'react-icons/fa'; // アイコンをインポート
 import { motion } from 'framer-motion'; // framer-motionをインポート
 
@@ -13,22 +13,22 @@ const itemVariants = {
 // アイコンのマッピング
 const profileData = [
   { text: '氏名: 増田 晃大', icon: <FaUser /> },
-  { text: '大学名: [大学名]', icon: <FaUniversity /> },
-  { text: '学部/学科: [学部名/学科名]', icon: <FaBook /> },
-  { text: '研究室: [研究室名]', icon: <FaMicroscope /> },
-  { text: '出身地: [出身地]', icon: <FaMapMarkerAlt /> },
-  { text: '趣味: [趣味]', icon: <FaSmile /> },
-  { text: 'サークル: [サークル名]', icon: <FaUsers /> },
-  { text: '強み: [強みの内容]', icon: <FaMedal /> },
-  { text: '弱み: [弱みの内容]', icon: <FaRegTired /> },
-  { text: 'GitHub のアカウント: [GitHubのリンク]', icon: <FaGithub /> },
+  { text: '大学名: 公立諏訪東京理科大学', icon: <FaUniversity /> },
+  { text: '学部/学科: 工学部/情報応用工学科', icon: <FaBook /> },
+  { text: '研究室: Virtual Reality ＆ Data Science Lab', icon: <FaMicroscope /> },
+  { text: '出身地: 群馬県', icon: <FaMapMarkerAlt /> },
+  { text: '趣味: ドライブ', icon: <FaSmile /> },
+  { text: 'サークル: バドミントン', icon: <FaUsers /> },
+  { text: '強み: 主体性/実行力', icon: <FaMedal /> },
+  { text: '弱み: 心配性', icon: <FaRegTired /> },
+  { text: 'GitHub のアカウント: T122135masuda', icon: <FaGithub /> },
 ];
 
 const Profile = () => (
   <div className="profile-section">
     <img src={profilePhoto} alt="Your Name" className="profile-photo" />
     <div className="profile-description">
-      <h2>私のプロフィール</h2>
+      <h2>マイプロフィール</h2>
 
       <motion.div 
         className="profile-details"

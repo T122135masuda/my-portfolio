@@ -6,7 +6,7 @@ const projects = [
   { 
     date: '代表', 
     title: 'VitaLinkプロジェクト', 
-    description: 'VitaLinkプロジェクトは、次世代のヘルスケアプラットフォームを開発することを目的としています。患者と医療従事者をつなぎ、データドリブンな医療を実現します。',
+    description: '「訪問診療において、医者と介護士の間で高齢者の情報共有が円滑に行えていない」という課題を解決すべく',
     heading: '地域医療・福祉 × DX',
     images: [
       'https://via.placeholder.com/300?text=VitaLink+1',
