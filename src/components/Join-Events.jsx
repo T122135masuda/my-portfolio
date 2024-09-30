@@ -27,8 +27,8 @@ const events = [
     date: '2024年 10月', 
     title: 'Plateauハッカソン', 
     icon: <FaHackerrank />,
-    description: 'Plateauハッカソンは、都市データを活用した新しいサービスやソリューションを開発することを目的としたイベントです。スマートシティや都市計画に関する革新的なプロジェクトを生み出します。',
-    link: 'https://example.com/plateau-hackathon', // 公式サイトリンクを追加
+    description: '国土交通省が主導する日本全国デジタルツイン化プロジェクトの Project PLATEAU と、オープンデータを活用することによって地域課題を解決できないかチャレンジするハッカソンです。',
+    link: 'https://suwax.jp/events/hackathon202409/', // 公式サイトリンクを追加
     images: [
       plateauImage1,
       plateauImage2,

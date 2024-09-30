@@ -1,7 +1,7 @@
 import React from 'react';
 import './Profile.css';
 import profilePhoto from '../assets/image.png'; // 画像ファイルをインポート
-import { FaUniversity, FaMapMarkerAlt, FaGithub, FaUser, FaBook, FaMicroscope, FaSmile, FaUsers, FaMedal, FaRegTired } from 'react-icons/fa'; // アイコンをインポート
+import { FaUniversity, FaMapMarkerAlt, FaGithub, FaUser, FaBook, FaMicroscope, FaSmile, FaUsers, FaMedal, FaRegTired, FaGlobe } from 'react-icons/fa'; // アイコンをインポート
 import { motion } from 'framer-motion'; // framer-motionをインポート
 
 // プロフィール項目のアニメーション設定
@@ -19,6 +19,7 @@ const profileData = [
   { text: '出身地: 群馬県', icon: <FaMapMarkerAlt /> },
   { text: '趣味: ドライブ', icon: <FaSmile /> },
   { text: 'サークル: バドミントン', icon: <FaUsers /> },
+  { text: '短期留学: カリフォルニア大学デービス校', icon: <FaGlobe /> }, // 新しい項目を追加
   { text: '強み: 主体性/実行力', icon: <FaMedal /> },
   { text: '弱み: 心配性', icon: <FaRegTired /> },
   { text: 'GitHub のアカウント: T122135masuda', icon: <FaGithub /> },
