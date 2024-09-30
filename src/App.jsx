@@ -9,7 +9,7 @@ import './App.css';
 const App = () => {
   return (
     <div className="App">
-      
+
       {/* 自己紹介セクション a*/}
       <section id="introduction">
         <Profile />
@@ -47,4 +47,3 @@ const App = () => {
 };
 
 export default App;
-76
