@@ -16,7 +16,7 @@ const events = [
     date: '2024年 9月', 
     title: 'Sony ~Sensing Solution ハッカソン~', 
     icon: <FaHackerrank />,
-    description: 'Sonyハッカソンは、最新のテクノロジーとクリエイティブなアイデアを組み合わせたプロジェクトを開発するイベントです。エンターテイメントやイノベーションに関する革新的なソリューションを生み出すことを目指しています。',
+    description: 'SPRESENSEを利用し、センサーから得られるデータ並びにAI等の技術を活用したシステムインテグレーションにより社会課題を解決したり、私たちの未来をもっと豊かにするようなエンタテイメントを創出するハッカソンんです',
     link: 'https://sensing-solution-hackathon.sonyged.com/#year-2024', // 公式サイトリンクを追加
     images: [
       sonyImage1,
