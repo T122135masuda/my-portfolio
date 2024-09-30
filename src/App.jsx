@@ -30,18 +30,18 @@ const App = () => {
         <JoinEvents />
       </section>
 
-      {/* メディア掲載セクション */}
-      <section id="media">
+      メディア掲載セクション
+      {/* <section id="media">
         <MediaSection />
-      </section>
+      </section> */}
 
       {/* 就活の軸セクション */}
-      <section id="career-focus">
+      {/* <section id="career-focus">
         <h1 style={{ textAlign: 'center', margin: '20px 0' }}>就活の軸</h1>
         <p style={{ textAlign: 'center', margin: '20px' }}>
           あなたの就活の軸に関する説明をここに追加します。
         </p>
-      </section>
+      </section> */}
     </div>
   );
 };
