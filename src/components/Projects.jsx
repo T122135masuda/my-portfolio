@@ -7,12 +7,15 @@ import 'react-medium-image-zoom/dist/styles.css';
 // ローカルの画像をインポート
 import vita1 from '../assets/project-pic/vita1.png';
 import vita2 from '../assets/project-pic/vita2.png';
+import vita3 from '../assets/project-pic/vita3.png';
+import RPG1 from '../assets/project-pic/RPG1.png';
+import RPG2 from '../assets/project-pic/RPG2.png';
 
 const projects = [
   { 
     date: '代表', 
     title: 'VitaLinkプロジェクト', 
-    description: '「訪問診療において、医者と介護士の間で高齢者の情報共有が円滑に行えていない」という課題を解決すべく',
+    // description: '「訪問診療において、医者と介護士の間で高齢者の情報共有が円滑に行えていない」という課題を解決すべく',
     heading: (
       <>
         富士見高原病院×公立諏訪東京理科大学<br />
@@ -22,13 +25,14 @@ const projects = [
     images: [
       vita1,  // ここでローカル画像1を使用
       vita2,  // ここでローカル画像2を使用
-      'https://via.placeholder.com/300?text=VitaLink+3', // 残りの画像はそのまま
+      vita3,
+ 
     ],
   },
   { 
     date: '代表', 
     title: 'Suwa RPG プロジェクト', 
-    description: 'Suwa RPGプロジェクトは、地域の観光資源を活用したローカルRPGを開発し、観光客を魅了することを目指しています。',
+    // description: 'Suwa RPGプロジェクトは、地域の観光資源を活用したローカルRPGを開発し、観光客を魅了することを目指しています。',
     heading: (
       <>
         諏訪市×公立諏訪東京理科大学<br />
@@ -36,15 +40,15 @@ const projects = [
       </>
     ),
     images: [
-      'https://via.placeholder.com/300?text=Suwa+RPG+1',
-      'https://via.placeholder.com/300?text=Suwa+RPG+2',
-      'https://via.placeholder.com/300?text=Suwa+RPG+3',
+      RPG1,  // ここでローカル画像1を使用
+      RPG2, 
+
     ],
   },
   { 
     date: '代表', 
     title: 'VR プロジェクト', 
-    description: 'VRプロジェクトは、仮想現実技術を活用して、教育や訓練の新しい体験を提供することを目指しています。',
+    // description: 'VRプロジェクトは、仮想現実技術を活用して、教育や訓練の新しい体験を提供することを目指しています。',
     heading: (
       <>
         諏訪市×公立諏訪東京理科大学<br />
@@ -52,9 +56,7 @@ const projects = [
       </>
     ),
     images: [
-      'https://via.placeholder.com/300?text=VR+1',
-      'https://via.placeholder.com/300?text=VR+2',
-      'https://via.placeholder.com/300?text=VR+3',
+
     ],
   },
 ];

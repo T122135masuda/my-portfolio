@@ -7,8 +7,8 @@ const Navbar = () => {
       <ul className="navbar-list">
         <li className="navbar-item"><a href="#projects">プロジェクト</a></li>
         <li className="navbar-item"><a href="#events">イベント</a></li>
-        <li className="navbar-item"><a href="#career-focus">未定</a></li>
-        <li className="navbar-item"><a href="#introduction">メディア掲載</a></li>
+        <li className="navbar-item"><a href="#career-focus">Not yet</a></li>
+        <li className="navbar-item"><a href="#introduction">Not yet</a></li>
       </ul>
     </nav>
   );

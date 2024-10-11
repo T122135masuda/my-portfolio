@@ -8,6 +8,7 @@ import { FaHackerrank } from 'react-icons/fa';
 // 相対パスを使用して画像をインポート
 import sonyImage1 from '../assets/Join-Events/sony1.png';
 import sonyImage2 from '../assets/Join-Events/sony2.png';
+import sonyImage3 from '../assets/Join-Events/sony3.png';
 import plateauImage1 from '../assets/Join-Events/plateau1.png';
 import plateauImage2 from '../assets/Join-Events/plateau2.png';
 
@@ -16,11 +17,12 @@ const events = [
     date: '2024年 9月', 
     title: 'Sony ~Sensing Solution ハッカソン~', 
     icon: <FaHackerrank />,
-    description: 'SPRESENSEを利用し、センサーから得られるデータ並びにAI等の技術を活用したシステムインテグレーションにより社会課題を解決したり、私たちの未来をもっと豊かにするようなエンタテイメントを創出するハッカソンんです',
+    description: 'SPRESENSEを利用し、センサーから得られるデータ並びにAI等の技術を活用したシステムインテグレーションにより社会課題を解決したり、私たちの未来をもっと豊かにするようなエンタテイメントを創出するハッカソンです。',
     link: 'https://sensing-solution-hackathon.sonyged.com/#year-2024', // 公式サイトリンクを追加
     images: [
       sonyImage1,
       sonyImage2,
+      sonyImage3,
     ],
   },
   { 
@@ -33,6 +35,7 @@ const events = [
       plateauImage1,
       plateauImage2,
     ],
+   成果物: 'https://protopedia.net/prototype/6121', // 作品成果物のURL
   },
 ];
 
@@ -89,6 +92,16 @@ export default function JoinEvents() {
               >
                 公式サイトのリンク
               </a>
+              <p>
+                <a 
+                  href={event.成果物} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="official-site-link"
+                >
+                  作品成果物のリンク
+                </a>
+              </p>
               <div className="join-event-images">
                 {event.images.map((image, i) => (
                   <Zoom key={i} onZoomChange={handleZoomChange}>
