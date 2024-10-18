@@ -21,7 +21,7 @@ const profileData = [
   { text: 'サークル: バドミントン', icon: <FaUsers /> },
   { text: '短期留学: カリフォルニア大学デービス校', icon: <FaGlobe /> }, // 新しい項目を追加
   { text: '強み: 主体性/チャレンジ精神', icon: <FaMedal /> },
-  { text: '弱み: せっかち', icon: <FaRegTired /> },
+  { text: '弱み: 心配性', icon: <FaRegTired /> },
   { text: 'GitHub のアカウント: T122135masuda', icon: <FaGithub /> },
 ];
 
