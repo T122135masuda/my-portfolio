@@ -1,43 +1,144 @@
-.navbar {
-  position: relative;
-  width: auto;
-  background-color: #4caf50; /* 背景色を緑に設定 */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
-  padding: 10px 0; /* ナビゲーションバーの高さを調整 */
-  display: flex;
-  justify-content: center; /* メニューを中央に配置 */
-}
+/* Navbar.css */
 
-.navbar-list {
+/* ナビゲーションバーの基本スタイル */
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 35px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
 }
 
+/* ハンバーガーメニューアイコン */
+.navbar-toggle {
+  position: absolute;
+  left: 20px;
+  width: 30px;
+  height: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+/* 各バーのスタイル */
+.navbar-toggle .bar {
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #333;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+/* 各バーの位置 */
+.navbar-toggle .bar:nth-child(1) {
+  top: 0;
+}
+
+.navbar-toggle .bar:nth-child(2) {
+  top: 10px;
+}
+
+.navbar-toggle .bar:nth-child(3) {
+  top: 20px;
+}
+
+/* ハンバーガーアイコンが開いている時のスタイル */
+.navbar-toggle.open .bar:nth-child(1) {
+  transform: translateY(10px) rotate(45deg); /* 最上部のバーが45度回転して下にスライド */
+}
+
+.navbar-toggle.open .bar:nth-child(2) {
+  opacity: 0; /* 中央のバーを非表示 */
+}
+
+.navbar-toggle.open .bar:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg); /* 最下部のバーが-45度回転して上にスライド */
+}
+
+/* MENUテキスト */
+.navbar-toggle .menu-text {
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+  margin-left: 40px;
+  transition: color 0.3s ease;
+  position: relative;
+  top: -4px;
+}
+
+/* ナビゲーションリスト */
+.navbar-list {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+/* メニューが開いたときのスタイル */
+.navbar-list.open {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-height: 300px;
+  opacity: 1;
+  animation: fadeSlideDown 0.3s ease;
+}
+
+/* ナビゲーションアイテム */
 .navbar-item {
-  margin: 0 15px;
+  margin: 10px 0;
 }
 
 .navbar-item a {
+  color: #333;
   text-decoration: none;
-  color: #ffffff; /* リンクの色を白に設定 */
   font-size: 16px;
   font-weight: bold;
-  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
   padding: 5px 10px;
-  border-radius: 5px;
+  transition: color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* 各リンクにホバーしたときのアニメーション */
 .navbar-item a:hover {
-  color: #4caf50; /* ホバー時のテキスト色を緑に変更 */
-  background-color: #ffffff; /* ホバー時の背景色を白に変更 */
-  transform: scale(1.1); /* ホバー時に少し拡大 */
+  color: #0073e6;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  transform: scale(1.05); /* リンクが少し拡大 */
 }
 
-.navbar-item a:active {
-  transform: scale(0.95); /* クリック時に縮小 */
+/* クリック時にアクティブなリンクのスタイル */
+.navbar-item a.active {
+  color: #0073e6; /* アクティブなリンクの色 */
+  font-weight: bold;
+  border-bottom: 2px solid #0073e6; /* 下線を追加して強調 */
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+/* メニュー開閉のフェードスライドアニメーション */
+@keyframes fadeSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

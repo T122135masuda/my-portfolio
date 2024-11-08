@@ -28,42 +28,42 @@ const mediaEntries = [
   },
 ];
 
-export default function MediaSection() {
-  return (
-    <div className="media-section">
-      <h2>メディア掲載</h2>
-      <div className="media-entries">
-        {mediaEntries.map((entry, index) => (
-          <div key={index} className="media-card">
-            <h3 className="media-project-name">{entry.projectName}</h3>
-            <p className="media-date">{entry.date}</p>
-            <p className="media-description">{entry.description}</p>
-            {entry.video && (
-              <div className="media-video">
-                <iframe
-                  src={entry.video}
-                  title="Media Video"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-              </div>
-            )}
-            {entry.image && (
-              <div className="media-image">
-                <img src={entry.image} alt={entry.projectName} />
-              </div>
-            )}
-            {entry.website && (
-              <p className="media-link">
-                <a href={entry.website} target="_blank" rel="noopener noreferrer">
-                  ウェブサイトを見る
-                </a>
-              </p>
-            )}
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-}
+// export default function MediaSection() {
+//   return (
+//     <div className="media-section">
+//       <h2>メディア掲載</h2>
+//       <div className="media-entries">
+//         {mediaEntries.map((entry, index) => (
+//           <div key={index} className="media-card">
+//             <h3 className="media-project-name">{entry.projectName}</h3>
+//             <p className="media-date">{entry.date}</p>
+//             <p className="media-description">{entry.description}</p>
+//             {entry.video && (
+//               <div className="media-video">
+//                 <iframe
+//                   src={entry.video}
+//                   title="Media Video"
+//                   frameBorder="0"
+//                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+//                   allowFullScreen
+//                 ></iframe>
+//               </div>
+//             )}
+//             {entry.image && (
+//               <div className="media-image">
+//                 <img src={entry.image} alt={entry.projectName} />
+//               </div>
+//             )}
+//             {entry.website && (
+//               <p className="media-link">
+//                 <a href={entry.website} target="_blank" rel="noopener noreferrer">
+//                   ウェブサイトを見る
+//                 </a>
+//               </p>
+//             )}
+//           </div>
+//         ))}
+//       </div>
+//     </div>
+//   );
+// }

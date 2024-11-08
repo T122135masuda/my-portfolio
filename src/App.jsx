@@ -3,20 +3,19 @@ import Profile from './components/Profile';
 import Projects from './components/Projects';
 import JoinEvents from './components/Join-Events';
 import Navbar from './components/Navbar';
-import MediaSection from './components/MediaSection'; // 新しいMediaSectionコンポーネントをインポート
+import MediaSection from './components/MediaSection';
 import './App.css';
 
 const App = () => {
   return (
     <div className="App">
+      {/* ナビゲーションバーを最上部に配置 */}
+      <Navbar />
 
-      {/* 自己紹介セクション a*/}
+      {/* 自己紹介セクション */}
       <section id="introduction">
         <Profile />
       </section>
-
-      {/* 自己紹介の下にナビゲーションバーを配置 */}
-      <Navbar />
 
       {/* プロジェクトセクション */}
       <section id="projects">
@@ -29,7 +28,7 @@ const App = () => {
         <h1 style={{ textAlign: 'center', margin: '20px 0' }}>参加中のイベント</h1>
         <JoinEvents />
       </section>
-
+      
       {/* メディア掲載セクション */}
       {/* <section id="media">
         <MediaSection />

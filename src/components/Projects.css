@@ -1,3 +1,5 @@
+/* ProjectsContainer.css */
+
 .projects-container {
   display: flex;
   flex-direction: column;
@@ -67,4 +69,52 @@
   max-width: 250px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* タブレット対応 */
+@media (max-width: 768px) {
+  .project-card {
+    padding: 15px;
+    width: 90%; /* カード幅を調整して画面幅にフィット */
+  }
+
+  .project-title {
+    font-size: 18px;
+  }
+
+  .project-date {
+    font-size: 13px;
+  }
+
+  .project-details p {
+    font-size: 15px;
+  }
+
+  .project-images img {
+    max-width: 200px;
+  }
+}
+
+/* モバイル対応 */
+@media (max-width: 480px) {
+  .project-card {
+    padding: 10px;
+    width: 100%; /* カード幅を画面いっぱいに */
+  }
+
+  .project-title {
+    font-size: 16px;
+  }
+
+  .project-date {
+    font-size: 12px;
+  }
+
+  .project-details p {
+    font-size: 14px;
+  }
+
+  .project-images img {
+    max-width: 150px; /* 画像の最大幅を縮小 */
+  }
 }
