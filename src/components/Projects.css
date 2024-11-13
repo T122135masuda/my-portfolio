@@ -71,6 +71,11 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+.join-event-links .event-link {
+  margin-bottom: 8px; /* リンク間にスペースを追加 */
+}
+
+
 /* タブレット対応 */
 @media (max-width: 768px) {
   .project-card {
